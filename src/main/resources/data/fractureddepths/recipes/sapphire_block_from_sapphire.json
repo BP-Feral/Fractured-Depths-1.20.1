@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "fractureddepths:sapphire"
+    }
+  },
+  "result": {
+    "item": "fractureddepths:sapphire_block"
+  }
+}
