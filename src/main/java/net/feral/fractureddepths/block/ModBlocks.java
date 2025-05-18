@@ -1,7 +1,9 @@
 package net.feral.fractureddepths.block;
 
 import net.feral.fractureddepths.FracturedDepths;
+import net.feral.fractureddepths.block.custom.SoundBlock;
 import net.feral.fractureddepths.item.ModItems;
+import net.minecraft.client.resources.sounds.Sound;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -41,6 +43,10 @@ public class ModBlocks {
     public static final RegistryObject<Block> END_STONE_SAPPHIRE_ORE = registerBlock("end_stone_sapphire_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.END_STONE)
                     .strength(5f).requiresCorrectToolForDrops(), UniformInt.of(5, 8)));
+
+    //HELPER: Register custom block that plays sound
+    public static final RegistryObject<Block> SOUND_BLOCK = registerBlock("sound_block",
+            () -> new SoundBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
 
 
     //HELPER: first register the block itself, then the item variant. also return the block
