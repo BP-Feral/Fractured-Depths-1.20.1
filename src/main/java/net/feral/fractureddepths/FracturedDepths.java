@@ -1,9 +1,9 @@
 package net.feral.fractureddepths;
 
 import com.mojang.logging.LogUtils;
-import net.feral.fractureddepths.Item.ModCreativeModTabls;
-import net.feral.fractureddepths.Item.ModItems;
-import net.minecraft.world.item.CreativeModeTab;
+import net.feral.fractureddepths.block.ModBlocks;
+import net.feral.fractureddepths.item.ModCreativeModTabs;
+import net.feral.fractureddepths.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -27,10 +27,13 @@ public class FracturedDepths {
         IEventBus modEventBus = context.getModEventBus();
 
         // Register the creative mode tab
-        ModCreativeModTabls.register(modEventBus);
+        ModCreativeModTabs.register(modEventBus);
 
         // Register custom items
         ModItems.register(modEventBus);
+
+        // Register custom blocks
+        ModBlocks.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 

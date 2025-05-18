@@ -1,4 +1,4 @@
-package net.feral.fractureddepths.Item;
+package net.feral.fractureddepths.item;
 
 import net.feral.fractureddepths.FracturedDepths;
 import net.minecraft.world.item.Item;
