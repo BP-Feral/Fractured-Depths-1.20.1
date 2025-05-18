@@ -19,7 +19,7 @@ public class FracturedDepths {
     // Define mod id in a common place for everything to reference
     public static final String MOD_ID = "fractureddepths";
     // Directly reference a slf4j logger
-    private static final Logger LOGGER = LogUtils.getLogger();
+    public static final Logger LOGGER = LogUtils.getLogger();
 
     public FracturedDepths(FMLJavaModLoadingContext context) {
         IEventBus modEventBus = context.getModEventBus();
