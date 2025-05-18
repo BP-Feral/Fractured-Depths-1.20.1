@@ -1,6 +1,10 @@
 package net.feral.fractureddepths;
 
 import com.mojang.logging.LogUtils;
+import net.feral.fractureddepths.Item.ModCreativeModTabls;
+import net.feral.fractureddepths.Item.ModItems;
+import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -16,13 +20,17 @@ import org.slf4j.Logger;
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(FracturedDepths.MOD_ID)
 public class FracturedDepths {
-    // Define mod id in a common place for everything to reference
     public static final String MOD_ID = "fractureddepths";
-    // Directly reference a slf4j logger
     public static final Logger LOGGER = LogUtils.getLogger();
 
     public FracturedDepths(FMLJavaModLoadingContext context) {
         IEventBus modEventBus = context.getModEventBus();
+
+        // Register the creative mode tab
+        ModCreativeModTabls.register(modEventBus);
+
+        // Register custom items
+        ModItems.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
@@ -34,9 +42,12 @@ public class FracturedDepths {
 
     }
 
-    // Add the example block item to the building blocks tab
+    // Add the sapphire item to the creative tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
-
+        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+            event.accept(ModItems.SAPPHIRE);
+            event.accept(ModItems.RAW_SAPPHIRE);
+        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
