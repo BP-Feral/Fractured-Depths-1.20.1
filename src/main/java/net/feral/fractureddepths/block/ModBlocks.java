@@ -3,7 +3,6 @@ package net.feral.fractureddepths.block;
 import net.feral.fractureddepths.FracturedDepths;
 import net.feral.fractureddepths.block.custom.SoundBlock;
 import net.feral.fractureddepths.item.ModItems;
-import net.minecraft.client.resources.sounds.Sound;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
