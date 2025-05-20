@@ -1,0 +1,5 @@
+// 1.20.1	2025-05-20T15:52:14.2655695	Global Loot Modifiers : fractureddepths
+1356381507466c89bb866cb2e27466c271029940 data/forge/loot_modifiers/global_loot_modifiers.json
+4ffa9f2d4250d23d6347b041681cd029a4d27f2f data/fractureddepths/loot_modifiers/metal_detector_from_jungle_temples.json
+dd25b760b25f11b69e7cf6bcabef432b520816ac data/fractureddepths/loot_modifiers/pine_cone_from_creeper.json
+1214a3d565ee7ad2037db6c00b27e7f685de76c8 data/fractureddepths/loot_modifiers/pine_cone_from_grass.json

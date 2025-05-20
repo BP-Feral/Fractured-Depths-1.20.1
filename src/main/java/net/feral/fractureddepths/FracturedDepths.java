@@ -4,6 +4,7 @@ import com.mojang.logging.LogUtils;
 import net.feral.fractureddepths.block.ModBlocks;
 import net.feral.fractureddepths.item.ModCreativeModTabs;
 import net.feral.fractureddepths.item.ModItems;
+import net.feral.fractureddepths.loot.ModLootModifiers;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -34,6 +35,9 @@ public class FracturedDepths {
 
         // Register custom blocks
         ModBlocks.register(modEventBus);
+
+        // Register loottables
+        ModLootModifiers.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
