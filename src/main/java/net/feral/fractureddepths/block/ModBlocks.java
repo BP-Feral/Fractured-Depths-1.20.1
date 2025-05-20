@@ -22,6 +22,11 @@ public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS =
             DeferredRegister.create(ForgeRegistries.BLOCKS, FracturedDepths.MOD_ID);
 
+    ///
+    /// java.lang.IllegalStateException: Missing loottable
+    ///
+    /// To add blocks with no loot table, call noLootTable()
+    /// example () -> new SoundBlock(...).noLootTable()
 
     //HELPER: Create block
     public static final RegistryObject<Block> SAPPHIRE_BLOCK = registerBlock("sapphire_block",
