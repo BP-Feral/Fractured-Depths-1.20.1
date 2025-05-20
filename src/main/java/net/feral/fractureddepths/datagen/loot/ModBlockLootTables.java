@@ -1,6 +1,7 @@
 package net.feral.fractureddepths.datagen.loot;
 
 import net.feral.fractureddepths.block.ModBlocks;
+import net.feral.fractureddepths.block.custom.CornCropBlock;
 import net.feral.fractureddepths.block.custom.StrawberryCropBlock;
 import net.feral.fractureddepths.item.ModItems;
 import net.minecraft.advancements.critereon.StatePropertiesPredicate;
@@ -53,12 +54,30 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.add(ModBlocks.SAPPHIRE_DOOR.get(),
                 block -> createDoorTable(ModBlocks.SAPPHIRE_DOOR.get()));
 
+        // STRAWBERRY CROP TABLE
         LootItemCondition.Builder lootitemcondition$builder = LootItemBlockStatePropertyCondition
                 .hasBlockStateProperties(ModBlocks.STRAWBERRY_CROP.get())
                 .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(StrawberryCropBlock.AGE, 5));
 
         this.add(ModBlocks.STRAWBERRY_CROP.get(), createCropDrops(ModBlocks.STRAWBERRY_CROP.get(), ModItems.STRAWBERRY.get(),
                 ModItems.STRAWBERRY_SEEDS.get(), lootitemcondition$builder));
+
+        // CORN CROP TABLE
+        // DISABLED BOTH blocks drop ITEM (even when top block not available)
+        //LootItemCondition.Builder lootitemcondition$builder2 = LootItemBlockStatePropertyCondition
+        //        .hasBlockStateProperties(ModBlocks.CORN_CROP.get())
+        //        .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(CornCropBlock.AGE, 7))
+        //        .or(LootItemBlockStatePropertyCondition
+        //                .hasBlockStateProperties(ModBlocks.CORN_CROP.get())
+        //               .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(CornCropBlock.AGE, 8)));
+
+        // Double block crop -> drops loot only from second block
+        LootItemCondition.Builder lootitemcondition$builder2 = LootItemBlockStatePropertyCondition
+                .hasBlockStateProperties(ModBlocks.CORN_CROP.get())
+                .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(CornCropBlock.AGE, 8));
+
+        this.add(ModBlocks.CORN_CROP.get(), createCropDrops(ModBlocks.CORN_CROP.get(), ModItems.CORN.get(),
+                ModItems.CORN_SEEDS.get(), lootitemcondition$builder2));
     }
 
     protected LootTable.Builder createCopperLikeOreDrops(Block pBlock, Item item) {
