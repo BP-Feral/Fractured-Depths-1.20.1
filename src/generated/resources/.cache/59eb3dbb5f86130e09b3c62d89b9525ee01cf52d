@@ -1,4 +1,4 @@
-// 1.20.1	2025-05-20T10:56:45.0565465	Loot Tables
+// 1.20.1	2025-05-20T16:38:45.908662	Loot Tables
 e6043df8daab67f4a67822b3cea00fca4e0e73de data/fractureddepths/loot_tables/blocks/deepslate_sapphire_ore.json
 a494969ada26a410311a1d95d4f8344e8f605380 data/fractureddepths/loot_tables/blocks/end_stone_sapphire_ore.json
 2e3b69af6ebb9e0f5623eb417391cf478167f281 data/fractureddepths/loot_tables/blocks/nether_sapphire_ore.json
@@ -15,3 +15,4 @@ ec5432928b020b4bf75656c2eb4c928fcdddd5d6 data/fractureddepths/loot_tables/blocks
 8eaab00aacbfc02654bb4ba6db74be240341298a data/fractureddepths/loot_tables/blocks/sapphire_trapdoor.json
 1831e8d34defad129b87475a1b4709850598f53a data/fractureddepths/loot_tables/blocks/sapphire_wall.json
 ce488e439b355397d2ebdbf36e99820eea77345d data/fractureddepths/loot_tables/blocks/sound_block.json
+a2bce5982975c1938a0dbfc1193fdd15778e7fea data/fractureddepths/loot_tables/blocks/strawberry_crop.json
