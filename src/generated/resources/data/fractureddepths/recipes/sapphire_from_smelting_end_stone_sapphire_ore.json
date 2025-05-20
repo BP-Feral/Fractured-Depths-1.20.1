@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.25,
+  "group": "sapphire",
+  "ingredient": {
+    "item": "fractureddepths:end_stone_sapphire_ore"
+  },
+  "result": "fractureddepths:sapphire"
+}
