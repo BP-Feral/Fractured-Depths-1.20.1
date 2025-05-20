@@ -3,6 +3,7 @@ package net.feral.fractureddepths.datagen;
 import net.feral.fractureddepths.FracturedDepths;
 import net.feral.fractureddepths.item.ModItems;
 import net.feral.fractureddepths.loot.AddItemModifier;
+import net.feral.fractureddepths.loot.AddSusSandItemModifier;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Blocks;
@@ -28,5 +29,10 @@ public class ModGlobalLootModifiersProvider extends GlobalLootModifierProvider {
 
         add("metal_detector_from_jungle_temples", new AddItemModifier(new LootItemCondition[] {
         new LootTableIdCondition.Builder(ResourceLocation.fromNamespaceAndPath("minecraft","chests/jungle_temple")).build() }, ModItems.METAL_DETECTOR.get()));
+
+        add("metal_detector_from_suspicious_sand", new AddSusSandItemModifier(new LootItemCondition[] {
+        new LootTableIdCondition.Builder(ResourceLocation.fromNamespaceAndPath("minecraft","archaeology/desert_pyramid")).build() }, ModItems.METAL_DETECTOR.get()));
+
+
     }
 }
