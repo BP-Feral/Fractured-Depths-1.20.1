@@ -8,6 +8,16 @@
 
   "block.fractureddepths.sound_block": "Sound Block",
 
+  "block.fractureddepths.sapphire_stairs": "Sapphire Stairs",
+  "block.fractureddepths.sapphire_slab": "Sapphire Slab",
+  "block.fractureddepths.sapphire_button": "Sapphire Button",
+  "block.fractureddepths.sapphire_pressure_plate": "Sapphire Pressure Plate",
+  "block.fractureddepths.sapphire_fence": "Sapphire Fence",
+  "block.fractureddepths.sapphire_fence_gate": "Sapphire Fence Gate",
+  "block.fractureddepths.sapphire_wall": "Sapphire Wall",
+  "block.fractureddepths.sapphire_door": "Sapphire Door",
+  "block.fractureddepths.sapphire_trapdoor": "Sapphire Trapdoor",
+
   "block.fractureddepths.sapphire_block": "Block of Sapphire",
   "block.fractureddepths.raw_sapphire_block": "Block of Raw Sapphire",
 

@@ -1,6 +1,15 @@
-// 1.20.1	2025-05-19T22:38:48.0091557	Item Models: fractureddepths
+// 1.20.1	2025-05-20T11:13:07.9555912	Item Models: fractureddepths
 52d80ea039270bea3943bec1c026df6bd2e0a82c assets/fractureddepths/models/item/metal_detector.json
 21b856a36e9ca38ea1d3d308b395737dfcc188da assets/fractureddepths/models/item/pine_cone.json
 60a88472028da5aa69c1d68a7d068ea68aaaf127 assets/fractureddepths/models/item/raw_sapphire.json
 26e57d3a93c54ebaa882d6980c58a69a0e5f2bd3 assets/fractureddepths/models/item/sapphire.json
+27299135923f0794b544316e387d36c8f4093f18 assets/fractureddepths/models/item/sapphire_button.json
+90a8e927f2580975f635b96dd4adb6b3dd269ffe assets/fractureddepths/models/item/sapphire_door.json
+59ec38b921413fa635dad2d46a08e52182949cba assets/fractureddepths/models/item/sapphire_fence.json
+6d15538f2557759f906403ecc22db3ead14a34cc assets/fractureddepths/models/item/sapphire_fence_gate.json
+7822e250fceff6b179b7876ae1ede9e87b96e4ed assets/fractureddepths/models/item/sapphire_pressure_plate.json
+fe0663f8d1bb65f4aa8ba9be3927b508d83d71f8 assets/fractureddepths/models/item/sapphire_slab.json
+61d1633b187fcaf0aa2d1d3a94a57226c162ccda assets/fractureddepths/models/item/sapphire_stairs.json
+476bde5d467fc58c1e97dc7f3e36628423004ef8 assets/fractureddepths/models/item/sapphire_trapdoor.json
+6a37f4cda71ad641ebfe2f2680f60f0aec698f03 assets/fractureddepths/models/item/sapphire_wall.json
 e4ce2be568bd664496227a63a194e8be8af75f28 assets/fractureddepths/models/item/strawberry.json

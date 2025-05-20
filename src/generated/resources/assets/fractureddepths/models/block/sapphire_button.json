@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/button",
+  "textures": {
+    "texture": "fractureddepths:block/sapphire_block"
+  }
+}

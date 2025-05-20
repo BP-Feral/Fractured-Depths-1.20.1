@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "fractureddepths:block/sapphire_slab"
+    },
+    "type=double": {
+      "model": "fractureddepths:block/sapphire_block"
+    },
+    "type=top": {
+      "model": "fractureddepths:block/sapphire_slab_top"
+    }
+  }
+}
