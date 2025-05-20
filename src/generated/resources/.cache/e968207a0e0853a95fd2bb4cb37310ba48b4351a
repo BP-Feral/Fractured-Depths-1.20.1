@@ -1,6 +1,7 @@
-// 1.20.1	2025-05-20T10:56:45.0617561	Tags for minecraft:block mod id fractureddepths
+// 1.20.1	2025-05-20T14:46:41.7638515	Tags for minecraft:block mod id fractureddepths
 31d88b9826c259c94a628fa4d5af91eaebb9e3ff data/forge/tags/blocks/needs_netherite_tool.json
 48c398acd99583dac878b086d99405f8be745421 data/fractureddepths/tags/blocks/metal_detector_valuables.json
+28632e70f90605e8f9b6099418256af77c3bd720 data/fractureddepths/tags/blocks/needs_sapphire_tool.json
 eeb4a00174f6714562c594f5a5b7e4e3dc3cc930 data/minecraft/tags/blocks/fences.json
 7b78736c8558b84716100b38284e5798b09f0867 data/minecraft/tags/blocks/fence_gates.json
 ba69b8ba4a4b0982b084b5e47e1ffb0d78be86c0 data/minecraft/tags/blocks/mineable/pickaxe.json
