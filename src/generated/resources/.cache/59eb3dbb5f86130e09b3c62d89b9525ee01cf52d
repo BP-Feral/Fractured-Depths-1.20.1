@@ -1,8 +1,10 @@
-// 1.20.1	2025-05-20T18:17:59.8996812	Loot Tables
+// 1.20.1	2025-05-22T12:21:02.1986858	Loot Tables
+c9d94526510d1187a4746f4c53a3d6e70934f203 data/fractureddepths/loot_tables/blocks/catmint.json
 d0d28d18320034d6c5b0f2bb0005f61532c8b91c data/fractureddepths/loot_tables/blocks/corn_crop.json
 e6043df8daab67f4a67822b3cea00fca4e0e73de data/fractureddepths/loot_tables/blocks/deepslate_sapphire_ore.json
 a494969ada26a410311a1d95d4f8344e8f605380 data/fractureddepths/loot_tables/blocks/end_stone_sapphire_ore.json
 2e3b69af6ebb9e0f5623eb417391cf478167f281 data/fractureddepths/loot_tables/blocks/nether_sapphire_ore.json
+a5bb95d1810ffd31cc01041d8c8718cac4cca96e data/fractureddepths/loot_tables/blocks/potted_catmint.json
 b226281ed403ba8434fe21b31dd9ef28a91fc315 data/fractureddepths/loot_tables/blocks/raw_sapphire_block.json
 cd78b96702478df5042f12d1ec3cca5fb2f68220 data/fractureddepths/loot_tables/blocks/sapphire_block.json
 572f537640a9fd5f8129651b75d94358d97d9c5d data/fractureddepths/loot_tables/blocks/sapphire_button.json

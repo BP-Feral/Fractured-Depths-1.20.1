@@ -44,6 +44,8 @@
   "block.fractureddepths.nether_sapphire_ore": "Nether Sapphire Ore",
   "block.fractureddepths.end_stone_sapphire_ore": "Endstone Sapphire Ore",
 
+  "block.fractureddepths.catmint": "Catmint",
+
   "creativetab.depths_tab": "Fractured Depths",
   "tooltip.fractureddepths.metal_detector.tooltip": "Finds valuables",
   "tooltip.fractureddepths.metal_detector.sound_block": "Makes sounds when right clicked"
