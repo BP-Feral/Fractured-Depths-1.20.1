@@ -2,7 +2,9 @@ package net.feral.fractureddepths.event;
 
 import it.unimi.dsi.fastutil.ints.Int2ObjectMap;
 import net.feral.fractureddepths.FracturedDepths;
+import net.feral.fractureddepths.block.ModBlocks;
 import net.feral.fractureddepths.item.ModItems;
+import net.feral.fractureddepths.villager.ModVillagers;
 import net.minecraft.world.entity.npc.VillagerProfession;
 import net.minecraft.world.entity.npc.VillagerTrades;
 import net.minecraft.world.item.ItemStack;
@@ -34,6 +36,15 @@ public class ModEvents {
                     new ItemStack(Items.EMERALD, 2),
                     new ItemStack(ModItems.CORN.get(), 14),
                     10, 9, 0.35f));
+        }
+
+        if (event.getType() == ModVillagers.SOUND_MASTER.get()) {
+            Int2ObjectMap<List<VillagerTrades.ItemListing>> trades = event.getTrades();
+
+            trades.get(1).add((pTrader, pRandom) -> new MerchantOffer(
+                    new ItemStack(Items.EMERALD, 32),
+                    new ItemStack(ModBlocks.SOUND_BLOCK.get(), 1),
+                    2, 8, 0.02f));
         }
     }
 }

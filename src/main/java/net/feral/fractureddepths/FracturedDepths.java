@@ -5,6 +5,7 @@ import net.feral.fractureddepths.block.ModBlocks;
 import net.feral.fractureddepths.item.ModCreativeModTabs;
 import net.feral.fractureddepths.item.ModItems;
 import net.feral.fractureddepths.loot.ModLootModifiers;
+import net.feral.fractureddepths.villager.ModVillagers;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.FlowerPotBlock;
@@ -40,6 +41,7 @@ public class FracturedDepths {
 
         // Register loottables
         ModLootModifiers.register(modEventBus);
+        ModVillagers.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 

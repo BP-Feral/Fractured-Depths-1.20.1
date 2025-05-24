@@ -47,6 +47,9 @@
   "block.fractureddepths.catmint": "Catmint",
 
   "creativetab.depths_tab": "Fractured Depths",
+
   "tooltip.fractureddepths.metal_detector.tooltip": "Finds valuables",
-  "tooltip.fractureddepths.metal_detector.sound_block": "Makes sounds when right clicked"
+  "tooltip.fractureddepths.metal_detector.sound_block": "Makes sounds when right clicked",
+
+  "entity.minecraft.villager.fractureddepths.soundmaster": "Sound Master"
 }
