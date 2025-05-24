@@ -5,6 +5,7 @@ import net.feral.fractureddepths.block.ModBlocks;
 import net.feral.fractureddepths.item.ModCreativeModTabs;
 import net.feral.fractureddepths.item.ModItems;
 import net.feral.fractureddepths.loot.ModLootModifiers;
+import net.feral.fractureddepths.sound.ModSounds;
 import net.feral.fractureddepths.villager.ModVillagers;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.level.block.Blocks;
@@ -41,7 +42,12 @@ public class FracturedDepths {
 
         // Register loottables
         ModLootModifiers.register(modEventBus);
+
+        // Register custom vilalgers
         ModVillagers.register(modEventBus);
+
+        // Register custom sounds | IMPORTANT: HAS TO BE MONO AND .OGG
+        ModSounds.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 

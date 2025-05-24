@@ -68,6 +68,8 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModItems.SAPPHIRE_BOOTS.get());
 
                         pOutput.accept(ModBlocks.CATMINT.get());
+
+                        pOutput.accept(ModItems.BEWITCHED_MUSIC_DISC.get());
                     })
                     .build());
 

@@ -126,6 +126,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         trimmedArmorItem(ModItems.SAPPHIRE_BOOTS);
 
         simpleBlockItemBlockTexture(ModBlocks.CATMINT);
+
+        simpleItem(ModItems.BEWITCHED_MUSIC_DISC);
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {

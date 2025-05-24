@@ -5,6 +5,7 @@ import net.feral.fractureddepths.block.custom.CornCropBlock;
 import net.feral.fractureddepths.block.custom.SoundBlock;
 import net.feral.fractureddepths.block.custom.StrawberryCropBlock;
 import net.feral.fractureddepths.item.ModItems;
+import net.feral.fractureddepths.sound.ModSounds;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.effect.MobEffects;
@@ -52,7 +53,7 @@ public class ModBlocks {
 
     //HELPER: Register custom block that plays sound
     public static final RegistryObject<Block> SOUND_BLOCK = registerBlock("sound_block",
-            () -> new SoundBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
+            () -> new SoundBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(ModSounds.SOUND_BLOCK_SOUNDS)));
 
     //HELPER: Register other SAPPTHIRE_BLOCK derived blocks
     public static final RegistryObject<Block> SAPPHIRE_STAIRS = registerBlock("sapphire_stairs",

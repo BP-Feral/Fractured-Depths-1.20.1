@@ -5,6 +5,7 @@ import net.feral.fractureddepths.block.ModBlocks;
 import net.feral.fractureddepths.item.custom.FuelItem;
 import net.feral.fractureddepths.item.custom.MetalDetectorItem;
 import net.feral.fractureddepths.item.custom.ModArmorItem;
+import net.feral.fractureddepths.sound.ModSounds;
 import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -74,6 +75,10 @@ public class ModItems {
             () -> new ArmorItem(ModArmorMaterials.SAPPHIRE, ArmorItem.Type.LEGGINGS, new Item.Properties()));
     public static final RegistryObject<Item> SAPPHIRE_BOOTS = ITEMS.register("sapphire_boots",
             () -> new ArmorItem(ModArmorMaterials.SAPPHIRE, ArmorItem.Type.BOOTS, new Item.Properties()));
+
+
+    public static final RegistryObject<Item> BEWITCHED_MUSIC_DISC = ITEMS.register("bewitched_music_disc",
+            () -> new RecordItem(6, ModSounds.BEWITCHED, new Item.Properties().stacksTo(1), 2920));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

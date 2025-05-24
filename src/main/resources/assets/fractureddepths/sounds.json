@@ -1,0 +1,52 @@
+{
+  "metal_detector_found_ore": {
+    "subtitles": "sounds.fractureddepths.metal_detector_found_ore",
+    "sounds": [
+      "fractureddepths:metal_detector_found_ore"
+    ]
+  },
+  "metal_detector_scan": {
+    "subtitles": "sounds.fractureddepths.metal_detector_scan",
+    "sounds": [
+      "fractureddepths:metal_detector_scan"
+    ]
+  },
+  "sound_block_break": {
+    "subtitles": "sounds.fractureddepths.sound_block_break",
+    "sounds": [
+      "fractureddepths:sound_block_break"
+    ]
+  },
+  "sound_block_step": {
+    "subtitles": "sounds.fractureddepths.sound_block_step",
+    "sounds": [
+      "fractureddepths:sound_block_step"
+    ]
+  },
+  "sound_block_place": {
+    "subtitles": "sounds.fractureddepths.sound_block_place",
+    "sounds": [
+      "fractureddepths:sound_block_place"
+    ]
+  },
+  "sound_block_hit": {
+    "subtitles": "sounds.fractureddepths.sound_block_hit",
+    "sounds": [
+      "fractureddepths:sound_block_hit"
+    ]
+  },
+  "sound_block_fall": {
+    "subtitles": "sounds.fractureddepths.sound_block_fall",
+    "sounds": [
+      "fractureddepths:sound_block_fall"
+    ]
+  },
+  "bewitched": {
+    "sounds": [
+      {
+        "name": "fractureddepths:bewitched",
+        "stream": true
+      }
+    ]
+  }
+}
