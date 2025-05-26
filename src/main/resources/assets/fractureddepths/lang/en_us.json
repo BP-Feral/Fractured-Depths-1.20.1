@@ -57,5 +57,7 @@
   "entity.minecraft.villager.fractureddepths.soundmaster": "Sound Master",
 
   "sounds.fractureddepths.metal_detector_found_ore": "Metal Detector Jingle",
-  "sounds.fractureddepths.metal_detector_scan": "Metal Detector Scan"
+  "sounds.fractureddepths.metal_detector_scan": "Metal Detector Scan",
+
+  "item.fractureddepths.rhino_spawn_egg": "Rhino Spawn Egg"
 }

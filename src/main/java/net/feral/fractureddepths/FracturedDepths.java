@@ -2,11 +2,14 @@ package net.feral.fractureddepths;
 
 import com.mojang.logging.LogUtils;
 import net.feral.fractureddepths.block.ModBlocks;
+import net.feral.fractureddepths.entity.ModEntities;
+import net.feral.fractureddepths.entity.client.RhinoRenderer;
 import net.feral.fractureddepths.item.ModCreativeModTabs;
 import net.feral.fractureddepths.item.ModItems;
 import net.feral.fractureddepths.loot.ModLootModifiers;
 import net.feral.fractureddepths.sound.ModSounds;
 import net.feral.fractureddepths.villager.ModVillagers;
+import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.FlowerPotBlock;
@@ -46,6 +49,9 @@ public class FracturedDepths {
         // Register custom vilalgers
         ModVillagers.register(modEventBus);
 
+        // Register custom entities
+        ModEntities.register(modEventBus);
+
         // Register custom sounds | IMPORTANT: HAS TO BE MONO AND .OGG
         ModSounds.register(modEventBus);
 
@@ -80,7 +86,7 @@ public class FracturedDepths {
     public static class ClientModEvents {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
-
+            EntityRenderers.register(ModEntities.RHINO.get(), RhinoRenderer::new);
         }
     }
 }
