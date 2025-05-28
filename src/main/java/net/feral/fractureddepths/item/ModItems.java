@@ -81,6 +81,8 @@ public class ModItems {
 
     public static final RegistryObject<Item> BEWITCHED_MUSIC_DISC = ITEMS.register("bewitched_music_disc",
             () -> new RecordItem(6, ModSounds.BEWITCHED, new Item.Properties().stacksTo(1), 2920));
+    public static final RegistryObject<Item> NO_ESCAPE_MUSIC_DISC = ITEMS.register("no_escape_music_disc",
+            () -> new RecordItem(6, ModSounds.NO_ESCAPE, new Item.Properties().stacksTo(1), 2960));
 
     public static final RegistryObject<Item> RHINO_SPAWN_EGG = ITEMS.register("rhino_spawn_egg",
             () -> new ForgeSpawnEggItem(ModEntities.RHINO, 0x7e9680, 0xc5d1c5, new Item.Properties()));

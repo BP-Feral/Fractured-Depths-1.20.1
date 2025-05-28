@@ -28,7 +28,8 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 );
 
         this.tag(ItemTags.MUSIC_DISCS)
-                .add(ModItems.BEWITCHED_MUSIC_DISC.get());
+                .add(ModItems.BEWITCHED_MUSIC_DISC.get())
+                .add(ModItems.NO_ESCAPE_MUSIC_DISC.get());
 
     }
 }

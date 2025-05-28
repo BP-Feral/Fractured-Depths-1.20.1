@@ -17,9 +17,14 @@
   "item.fractureddepths.sapphire_chestplate": "Sapphire Chestplate",
   "item.fractureddepths.sapphire_leggings": "Sapphire Leggings",
   "item.fractureddepths.sapphire_boots": "Sapphire Boots",
+
   "item.fractureddepths.bewitched_music_disc": "Bewitched Music Disc",
   "item.fractureddepths.bewitched_music_disc.desc": "Fractured Depths - Bewitched",
+  "item.fractureddepths.no_escape_music_disc": "No Escape Music Disc",
+  "item.fractureddepths.no_escape_music_disc.desc": "Fractured Depths - No Escape",
+
   "item.fractureddepths.rhino_spawn_egg": "Rhino Spawn Egg",
+
   "block.fractureddepths.sound_block": "Sound Block",
   "block.fractureddepths.sapphire_stairs": "Sapphire Stairs",
   "block.fractureddepths.sapphire_slab": "Sapphire Slab",
@@ -38,10 +43,14 @@
   "block.fractureddepths.end_stone_sapphire_ore": "Endstone Sapphire Ore",
   "block.fractureddepths.gem_polishing_station": "Gem Polishing Station",
   "block.fractureddepths.catmint": "Catmint",
-  "creativetab.depths_tab": "Fractured Depths",
+
   "tooltip.fractureddepths.metal_detector.tooltip": "Finds valuables",
   "tooltip.fractureddepths.metal_detector.sound_block": "Makes sounds when right clicked",
+
   "entity.minecraft.villager.fractureddepths.soundmaster": "Sound Master",
+
   "sounds.fractureddepths.metal_detector_found_ore": "Metal Detector Jingle",
-  "sounds.fractureddepths.metal_detector_scan": "Metal Detector Scan"
+  "sounds.fractureddepths.metal_detector_scan": "Metal Detector Scan",
+
+  "creativetab.depths_tab": "Fractured Depths"
 }

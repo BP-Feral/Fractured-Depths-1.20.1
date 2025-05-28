@@ -48,5 +48,13 @@
         "stream": true
       }
     ]
+  },
+  "no_escape": {
+    "sounds": [
+      {
+        "name": "fractureddepths:no_escape",
+        "stream": true
+      }
+    ]
   }
 }

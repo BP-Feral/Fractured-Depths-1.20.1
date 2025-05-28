@@ -8,6 +8,7 @@ import net.feral.fractureddepths.entity.client.RhinoRenderer;
 import net.feral.fractureddepths.item.ModCreativeModTabs;
 import net.feral.fractureddepths.item.ModItems;
 import net.feral.fractureddepths.loot.ModLootModifiers;
+import net.feral.fractureddepths.recipe.ModRecipes;
 import net.feral.fractureddepths.screen.GemPolishingStationScreen;
 import net.feral.fractureddepths.screen.ModMenuTypes;
 import net.feral.fractureddepths.sound.ModSounds;
@@ -64,6 +65,9 @@ public class FracturedDepths {
 
         // Register custom sounds | IMPORTANT: HAS TO BE MONO AND .OGG
         ModSounds.register(modEventBus);
+
+        // Register custom recipes for custom block entities
+        ModRecipes.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 

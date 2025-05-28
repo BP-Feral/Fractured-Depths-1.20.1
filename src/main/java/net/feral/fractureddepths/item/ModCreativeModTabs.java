@@ -70,6 +70,8 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModBlocks.CATMINT.get());
 
                         pOutput.accept(ModItems.BEWITCHED_MUSIC_DISC.get());
+                        pOutput.accept(ModItems.NO_ESCAPE_MUSIC_DISC.get());
+
                         pOutput.accept(ModItems.RHINO_SPAWN_EGG.get());
 
                         pOutput.accept(ModBlocks.GEM_POLISHING_STATION.get());

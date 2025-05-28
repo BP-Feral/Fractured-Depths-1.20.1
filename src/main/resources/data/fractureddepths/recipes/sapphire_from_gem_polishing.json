@@ -1,0 +1,12 @@
+{
+  "type": "fractureddepths:gem_polishing",
+  "ingredients": [
+    {
+      "item": "fractureddepths:raw_sapphire"
+    }
+  ],
+  "output": {
+    "count": 3,
+    "item": "fractureddepths:sapphire"
+  }
+}

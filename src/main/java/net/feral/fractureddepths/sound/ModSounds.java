@@ -23,6 +23,7 @@ public class ModSounds {
 
 
     public static final RegistryObject<SoundEvent> BEWITCHED = registerSoundEvents("bewitched");
+    public static final RegistryObject<SoundEvent> NO_ESCAPE = registerSoundEvents("no_escape");
 
     public static final ForgeSoundType SOUND_BLOCK_SOUNDS = new ForgeSoundType(1f, 1f,
             ModSounds.SOUND_BLOCK_BREAK, ModSounds.SOUND_BLOCK_STEP, ModSounds.SOUND_BLOCK_PLACE,
