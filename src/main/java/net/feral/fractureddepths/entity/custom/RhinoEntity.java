@@ -3,7 +3,6 @@ package net.feral.fractureddepths.entity.custom;
 import net.feral.fractureddepths.entity.ModEntities;
 import net.feral.fractureddepths.entity.ai.RhinoAttackGoal;
 import net.minecraft.network.syncher.EntityDataAccessor;
-import net.minecraft.network.syncher.EntityDataSerializer;
 import net.minecraft.network.syncher.EntityDataSerializers;
 import net.minecraft.network.syncher.SynchedEntityData;
 import net.minecraft.server.level.ServerLevel;
@@ -105,6 +104,7 @@ public class RhinoEntity extends Animal {
         this.goalSelector.addGoal(0, new FloatGoal(this));
 
         this.goalSelector.addGoal(1, new RhinoAttackGoal(this, 1.0D, true));
+        this.goalSelector.addGoal(1, new NearestAttackableTargetGoal<>(this, Creeper.class, true));
         this.goalSelector.addGoal(2, new BreedGoal(this, 1.15D));
         this.goalSelector.addGoal(3, new TemptGoal(this, 1.2D, Ingredient.of(Items.COOKED_BEEF), false));
 

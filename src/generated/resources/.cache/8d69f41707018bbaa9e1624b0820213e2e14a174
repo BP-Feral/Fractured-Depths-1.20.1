@@ -1,8 +1,9 @@
-// 1.20.1	2025-05-22T12:21:02.2193338	Block States: fractureddepths
+// 1.20.1	2025-05-28T16:14:06.1760735	Block States: fractureddepths
 1371073f7a30cf5427c4edf84eba886c456e8f3c assets/fractureddepths/blockstates/catmint.json
 1542683122bee3513cbcd982952ed774194a21a2 assets/fractureddepths/blockstates/corn_crop.json
 b43e8ff3267dc31ffb99d85a048c2406a1991aad assets/fractureddepths/blockstates/deepslate_sapphire_ore.json
 1f392b5b11b0b0cce24b65f459b98f74be4f491c assets/fractureddepths/blockstates/end_stone_sapphire_ore.json
+f663c13c05b0a43acfea808fb5d9441f2e8a9a3c assets/fractureddepths/blockstates/gem_polishing_station.json
 a2fd99f98efbccb2d0640df88771fccd4b7fe40e assets/fractureddepths/blockstates/nether_sapphire_ore.json
 ab0e08cb435b4b7f2bc50354d42f0d7cee49fdd2 assets/fractureddepths/blockstates/potted_catmint.json
 059efc43d14f111673a67beff2bce4140d65db1d assets/fractureddepths/blockstates/raw_sapphire_block.json

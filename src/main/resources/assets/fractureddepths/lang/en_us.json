@@ -1,34 +1,26 @@
 {
   "item.fractureddepths.sapphire": "Sapphire",
   "item.fractureddepths.raw_sapphire": "Raw Sapphire",
-
   "item.fractureddepths.metal_detector": "Metal Detector",
-
   "item.fractureddepths.strawberry": "Strawberry",
   "item.fractureddepths.strawberry_seeds": "Strawberry Seeds",
-
   "item.fractureddepths.corn": "Corn",
   "item.fractureddepths.corn_seeds": "Corn Seeds",
-
   "item.fractureddepths.pine_cone": "Pine Cone",
-
-  "block.fractureddepths.sound_block": "Sound Block",
   "item.fractureddepths.sapphire_staff": "Sapphire Staff",
-
   "item.fractureddepths.sapphire_sword": "Sapphire Sword",
   "item.fractureddepths.sapphire_pickaxe": "Sapphire Pickaxe",
   "item.fractureddepths.sapphire_axe": "Sapphire Axe",
   "item.fractureddepths.sapphire_shovel": "Sapphire Shovel",
   "item.fractureddepths.sapphire_hoe": "Sapphire Hoe",
-
   "item.fractureddepths.sapphire_helmet": "Sapphire Helmet",
   "item.fractureddepths.sapphire_chestplate": "Sapphire Chestplate",
   "item.fractureddepths.sapphire_leggings": "Sapphire Leggings",
   "item.fractureddepths.sapphire_boots": "Sapphire Boots",
-
   "item.fractureddepths.bewitched_music_disc": "Bewitched Music Disc",
   "item.fractureddepths.bewitched_music_disc.desc": "Fractured Depths - Bewitched",
-
+  "item.fractureddepths.rhino_spawn_egg": "Rhino Spawn Egg",
+  "block.fractureddepths.sound_block": "Sound Block",
   "block.fractureddepths.sapphire_stairs": "Sapphire Stairs",
   "block.fractureddepths.sapphire_slab": "Sapphire Slab",
   "block.fractureddepths.sapphire_button": "Sapphire Button",
@@ -38,26 +30,18 @@
   "block.fractureddepths.sapphire_wall": "Sapphire Wall",
   "block.fractureddepths.sapphire_door": "Sapphire Door",
   "block.fractureddepths.sapphire_trapdoor": "Sapphire Trapdoor",
-
   "block.fractureddepths.sapphire_block": "Block of Sapphire",
   "block.fractureddepths.raw_sapphire_block": "Block of Raw Sapphire",
-
   "block.fractureddepths.sapphire_ore": "Sapphire Ore",
   "block.fractureddepths.deepslate_sapphire_ore": "Deepslate Sapphire Ore",
   "block.fractureddepths.nether_sapphire_ore": "Nether Sapphire Ore",
   "block.fractureddepths.end_stone_sapphire_ore": "Endstone Sapphire Ore",
-
+  "block.fractureddepths.gem_polishing_station": "Gem Polishing Station",
   "block.fractureddepths.catmint": "Catmint",
-
   "creativetab.depths_tab": "Fractured Depths",
-
   "tooltip.fractureddepths.metal_detector.tooltip": "Finds valuables",
   "tooltip.fractureddepths.metal_detector.sound_block": "Makes sounds when right clicked",
-
   "entity.minecraft.villager.fractureddepths.soundmaster": "Sound Master",
-
   "sounds.fractureddepths.metal_detector_found_ore": "Metal Detector Jingle",
-  "sounds.fractureddepths.metal_detector_scan": "Metal Detector Scan",
-
-  "item.fractureddepths.rhino_spawn_egg": "Rhino Spawn Egg"
+  "sounds.fractureddepths.metal_detector_scan": "Metal Detector Scan"
 }

@@ -71,6 +71,8 @@ public class ModCreativeModTabs {
 
                         pOutput.accept(ModItems.BEWITCHED_MUSIC_DISC.get());
                         pOutput.accept(ModItems.RHINO_SPAWN_EGG.get());
+
+                        pOutput.accept(ModBlocks.GEM_POLISHING_STATION.get());
                     })
                     .build());
 

@@ -2,6 +2,7 @@ package net.feral.fractureddepths.block;
 
 import net.feral.fractureddepths.FracturedDepths;
 import net.feral.fractureddepths.block.custom.CornCropBlock;
+import net.feral.fractureddepths.block.custom.GemPolishingStationBlock;
 import net.feral.fractureddepths.block.custom.SoundBlock;
 import net.feral.fractureddepths.block.custom.StrawberryCropBlock;
 import net.feral.fractureddepths.item.ModItems;
@@ -82,6 +83,10 @@ public class ModBlocks {
             () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.AMETHYST).noCollission(), BlockSetType.IRON));
     public static final RegistryObject<Block> SAPPHIRE_TRAPDOOR = registerBlock("sapphire_trapdoor",
             () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.AMETHYST).noCollission(), BlockSetType.IRON));
+
+
+    public static final RegistryObject<Block> GEM_POLISHING_STATION = registerBlock("gem_polishing_station",
+            () -> new GemPolishingStationBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion()));
 
     //HELPER: register crop blocks that consist of plantable seed
     public static final RegistryObject<Block> STRAWBERRY_CROP = BLOCKS.register("strawberry_crop",

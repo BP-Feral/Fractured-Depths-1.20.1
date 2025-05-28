@@ -128,6 +128,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleBlockItemBlockTexture(ModBlocks.CATMINT);
 
         simpleItem(ModItems.BEWITCHED_MUSIC_DISC);
+        blockLikeItem(ModBlocks.GEM_POLISHING_STATION);
 
         withExistingParent(ModItems.RHINO_SPAWN_EGG.getId().getPath(), mcLoc("item/template_spawn_egg"));
     }
