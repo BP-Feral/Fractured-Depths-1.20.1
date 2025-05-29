@@ -1,7 +1,8 @@
-// 1.20.1	2025-05-29T16:56:58.2612322	Registries
+// 1.20.1	2025-05-29T17:40:39.3572636	Registries
 cf587fd4eea1e144231d11fe01680230f87b3b8b data/fractureddepths/forge/biome_modifier/add_end_sapphire_ore.json
 fa006e5ecced26b119a429ed9f05d6e5ab4e7588 data/fractureddepths/forge/biome_modifier/add_nether_sapphire_ore.json
 e3b3d4672b5e42b079425d2693535faba61cbf36 data/fractureddepths/forge/biome_modifier/add_sapphire_ore.json
+4431e8a0af3a90fda1abbd9cdde1a9a7ab3d75db data/fractureddepths/worldgen/biome/hollowshade_forest_biome.json
 72a0322e7dd38dcaf453db803ce87bc98d79add9 data/fractureddepths/worldgen/configured_feature/end_sapphire_ore.json
 d2b00ed2d767d6f069a6e4dedcdd5f8fddef7474 data/fractureddepths/worldgen/configured_feature/nether_sapphire_ore.json
 85ac0dac5dd0cff22085769bd71a146f21cf0467 data/fractureddepths/worldgen/configured_feature/pine.json
