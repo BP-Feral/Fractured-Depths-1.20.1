@@ -51,6 +51,9 @@
   "block.fractureddepths.stripped_pine_wood": "Stripped Pine Wood",
   "block.fractureddepths.pine_leaves": "Pine Leaves",
 
+  "block.fractureddepths.pine_sign": "Pine Sign",
+  "block.fractureddepths.pine_hanging_sign": "Pine Hanging Sign",
+
   "tooltip.fractureddepths.metal_detector.tooltip": "Finds valuables",
   "tooltip.fractureddepths.metal_detector.sound_block": "Makes sounds when right clicked",
 

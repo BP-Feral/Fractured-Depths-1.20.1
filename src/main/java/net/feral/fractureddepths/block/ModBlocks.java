@@ -4,6 +4,7 @@ import net.feral.fractureddepths.FracturedDepths;
 import net.feral.fractureddepths.block.custom.*;
 import net.feral.fractureddepths.item.ModItems;
 import net.feral.fractureddepths.sound.ModSounds;
+import net.feral.fractureddepths.util.ModWoodTypes;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.sounds.SoundEvents;
@@ -148,7 +149,15 @@ public class ModBlocks {
                     BlockBehaviour.Properties.copy(Blocks.POTTED_ALLIUM).noOcclusion()));
 
 
+    public static final RegistryObject<Block> PINE_SIGN = BLOCKS.register("pine_sign",
+            () -> new ModStandingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN), ModWoodTypes.PINE));
+    public static final RegistryObject<Block> PINE_WALL_SIGN = BLOCKS.register("pine_wall_sign",
+            () -> new ModWallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_SIGN), ModWoodTypes.PINE));
 
+    public static final RegistryObject<Block> PINE_HANGING_SIGN = BLOCKS.register("pine_hanging_sign",
+            () -> new ModHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_HANGING_SIGN), ModWoodTypes.PINE));
+    public static final RegistryObject<Block> PINE_WALL_HANGING_SIGN = BLOCKS.register("pine_wall_hanging_sign",
+            () -> new ModWallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_HANGING_SIGN), ModWoodTypes.PINE));
 
     //HELPER: first register the block itself, then the item variant. also return the block
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {

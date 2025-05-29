@@ -12,14 +12,13 @@ import net.minecraftforge.client.model.generators.BlockStateProvider;
 import net.minecraftforge.client.model.generators.ConfiguredModel;
 import net.minecraftforge.client.model.generators.ModelFile;
 import net.minecraftforge.common.data.ExistingFileHelper;
-import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
 import java.util.function.Function;
 
-public class ModBlocksStateProvider extends BlockStateProvider {
-    public ModBlocksStateProvider(PackOutput output, ExistingFileHelper exFileHelper) {
+public class ModBlockStateProvider extends BlockStateProvider {
+    public ModBlockStateProvider(PackOutput output, ExistingFileHelper exFileHelper) {
         super(output, FracturedDepths.MOD_ID, exFileHelper);
     }
 
@@ -75,6 +74,30 @@ public class ModBlocksStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.PINE_PLANKS);
 
         leavesBlock(ModBlocks.PINE_LEAVES);
+
+        signBlock(((StandingSignBlock) ModBlocks.PINE_SIGN.get()), ((WallSignBlock) ModBlocks.PINE_WALL_SIGN.get()),
+                blockTexture(ModBlocks.PINE_PLANKS.get()));
+
+        hangingSignBlock(ModBlocks.PINE_HANGING_SIGN.get(), ModBlocks.PINE_WALL_HANGING_SIGN.get(), blockTexture(ModBlocks.PINE_PLANKS.get()));
+
+    }
+
+    public void hangingSignBlock(Block signBlock, Block wallSignBlock, ResourceLocation texture) {
+        ModelFile sign = models().sign(name(signBlock), texture);
+        hangingSignBlock(signBlock, wallSignBlock, sign);
+    }
+
+    public void hangingSignBlock(Block signBlock, Block wallSignBlock, ModelFile sign) {
+        simpleBlock(signBlock, sign);
+        simpleBlock(wallSignBlock, sign);
+    }
+
+    private String name(Block block) {
+        return key(block).getPath();
+    }
+
+    private ResourceLocation key(Block block) {
+        return ForgeRegistries.BLOCKS.getKey(block);
     }
 
     private void leavesBlock(RegistryObject<Block> blockRegistryObject) {

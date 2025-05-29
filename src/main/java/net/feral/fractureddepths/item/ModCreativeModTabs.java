@@ -74,6 +74,9 @@ public class ModCreativeModTabs {
 
                         pOutput.accept(ModItems.RHINO_SPAWN_EGG.get());
 
+                        pOutput.accept(ModItems.PINE_SIGN.get());
+                        pOutput.accept(ModItems.PINE_HANGING_SIGN.get());
+
                         pOutput.accept(ModBlocks.GEM_POLISHING_STATION.get());
 
                         pOutput.accept(ModBlocks.PINE_LOG.get());

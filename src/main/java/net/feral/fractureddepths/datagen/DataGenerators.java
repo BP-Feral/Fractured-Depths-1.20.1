@@ -1,7 +1,6 @@
 package net.feral.fractureddepths.datagen;
 
 import net.feral.fractureddepths.FracturedDepths;
-import net.minecraft.core.Holder;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;
@@ -24,7 +23,7 @@ public class DataGenerators {
         generator.addProvider(event.includeServer(), new ModRecipeProvider(packOutput));
         generator.addProvider(event.includeServer(), ModLootTableProvider.create(packOutput));
 
-        generator.addProvider(event.includeServer(), new ModBlocksStateProvider(packOutput, existingFileHelper));
+        generator.addProvider(event.includeClient(), new ModBlockStateProvider(packOutput, existingFileHelper));
         generator.addProvider(event.includeServer(), new ModItemModelProvider(packOutput, existingFileHelper));
 
         ModBlockTagGenerator blockTagGenerator = generator.addProvider(event.includeServer(),

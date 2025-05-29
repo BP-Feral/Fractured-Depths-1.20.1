@@ -12,8 +12,10 @@ import net.feral.fractureddepths.recipe.ModRecipes;
 import net.feral.fractureddepths.screen.GemPolishingStationScreen;
 import net.feral.fractureddepths.screen.ModMenuTypes;
 import net.feral.fractureddepths.sound.ModSounds;
+import net.feral.fractureddepths.util.ModWoodTypes;
 import net.feral.fractureddepths.villager.ModVillagers;
 import net.minecraft.client.gui.screens.MenuScreens;
+import net.minecraft.client.renderer.Sheets;
 import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.level.block.Blocks;
@@ -100,6 +102,8 @@ public class FracturedDepths {
     public static class ClientModEvents {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
+            Sheets.addWoodType(ModWoodTypes.PINE);
+
             EntityRenderers.register(ModEntities.RHINO.get(), RhinoRenderer::new);
 
             MenuScreens.register(ModMenuTypes.GEM_POLISHING_MENU.get(), GemPolishingStationScreen::new);
