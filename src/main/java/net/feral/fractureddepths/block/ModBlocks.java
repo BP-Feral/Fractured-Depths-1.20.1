@@ -5,6 +5,7 @@ import net.feral.fractureddepths.block.custom.*;
 import net.feral.fractureddepths.item.ModItems;
 import net.feral.fractureddepths.sound.ModSounds;
 import net.feral.fractureddepths.util.ModWoodTypes;
+import net.feral.fractureddepths.worldgen.tree.PineTreeGrower;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.sounds.SoundEvents;
@@ -158,6 +159,9 @@ public class ModBlocks {
             () -> new ModHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_HANGING_SIGN), ModWoodTypes.PINE));
     public static final RegistryObject<Block> PINE_WALL_HANGING_SIGN = BLOCKS.register("pine_wall_hanging_sign",
             () -> new ModWallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_HANGING_SIGN), ModWoodTypes.PINE));
+
+    public static final RegistryObject<Block> PINE_SAPLING = registerBlock("pine_sapling",
+            () -> new SaplingBlock(new PineTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
 
     //HELPER: first register the block itself, then the item variant. also return the block
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {

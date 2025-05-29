@@ -137,6 +137,14 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         simpleItem(ModItems.PINE_SIGN);
         simpleItem(ModItems.PINE_HANGING_SIGN);
+
+        saplingItem(ModBlocks.PINE_SAPLING);
+    }
+
+    private ItemModelBuilder saplingItem(RegistryObject<Block> item) {
+        return withExistingParent(item.getId().getPath(),
+                ResourceLocation.fromNamespaceAndPath("minecraft", "item/generated")).texture("layer0",
+                ResourceLocation.fromNamespaceAndPath(FracturedDepths.MOD_ID, "block/" + item.getId().getPath()));
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {

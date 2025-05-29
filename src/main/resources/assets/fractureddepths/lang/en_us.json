@@ -54,6 +54,8 @@
   "block.fractureddepths.pine_sign": "Pine Sign",
   "block.fractureddepths.pine_hanging_sign": "Pine Hanging Sign",
 
+  "block.fractureddepths.pine_sapling": "Pine Sapling",
+
   "tooltip.fractureddepths.metal_detector.tooltip": "Finds valuables",
   "tooltip.fractureddepths.metal_detector.sound_block": "Makes sounds when right clicked",
 
