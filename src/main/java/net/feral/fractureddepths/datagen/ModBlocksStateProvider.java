@@ -12,6 +12,8 @@ import net.minecraftforge.client.model.generators.BlockStateProvider;
 import net.minecraftforge.client.model.generators.ConfiguredModel;
 import net.minecraftforge.client.model.generators.ModelFile;
 import net.minecraftforge.common.data.ExistingFileHelper;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
 import java.util.function.Function;
@@ -56,6 +58,33 @@ public class ModBlocksStateProvider extends BlockStateProvider {
 
         simpleBlock(ModBlocks.GEM_POLISHING_STATION.get(),
                 new ModelFile.UncheckedModelFile(modLoc("block/gem_polishing_station")));
+
+        logBlock(((RotatedPillarBlock) ModBlocks.PINE_LOG.get()));
+        axisBlock(((RotatedPillarBlock) ModBlocks.PINE_WOOD.get()), blockTexture(ModBlocks.PINE_LOG.get()), blockTexture(ModBlocks.PINE_LOG.get()));
+
+        axisBlock(((RotatedPillarBlock) ModBlocks.STRIPPED_PINE_LOG.get()), blockTexture(ModBlocks.STRIPPED_PINE_LOG.get()),
+                ResourceLocation.fromNamespaceAndPath(FracturedDepths.MOD_ID, "block/stripped_pine_log_top"));
+        axisBlock(((RotatedPillarBlock) ModBlocks.STRIPPED_PINE_WOOD.get()), blockTexture(ModBlocks.STRIPPED_PINE_LOG.get()),
+                blockTexture(ModBlocks.STRIPPED_PINE_LOG.get()));
+
+        blockItem(ModBlocks.PINE_LOG);
+        blockItem(ModBlocks.PINE_WOOD);
+        blockItem(ModBlocks.STRIPPED_PINE_LOG);
+        blockItem(ModBlocks.STRIPPED_PINE_WOOD);
+
+        blockWithItem(ModBlocks.PINE_PLANKS);
+
+        leavesBlock(ModBlocks.PINE_LEAVES);
+    }
+
+    private void leavesBlock(RegistryObject<Block> blockRegistryObject) {
+        simpleBlockWithItem(blockRegistryObject.get(), models().singleTexture(ForgeRegistries.BLOCKS.getKey(blockRegistryObject.get()).getPath(),
+                ResourceLocation.fromNamespaceAndPath("minecraft", "block/leaves"), "all", blockTexture(blockRegistryObject.get())).renderType("cutout"));
+    }
+
+    private void blockItem(RegistryObject<Block> blockRegistryObject) {
+        simpleBlockItem(blockRegistryObject.get(), new ModelFile.UncheckedModelFile(FracturedDepths.MOD_ID + ":block/" +
+                ForgeRegistries.BLOCKS.getKey(blockRegistryObject.get()).getPath()));
     }
 
     // STRAWBERRY LOOT TABLE GENERATOR

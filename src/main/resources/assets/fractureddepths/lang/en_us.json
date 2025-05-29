@@ -44,6 +44,13 @@
   "block.fractureddepths.gem_polishing_station": "Gem Polishing Station",
   "block.fractureddepths.catmint": "Catmint",
 
+  "block.fractureddepths.pine_log": "Pine Log",
+  "block.fractureddepths.pine_planks": "Pine Planks",
+  "block.fractureddepths.pine_wood": "Pine Wood",
+  "block.fractureddepths.stripped_pine_log": "Stripped Pine Log",
+  "block.fractureddepths.stripped_pine_wood": "Stripped Pine Wood",
+  "block.fractureddepths.pine_leaves": "Pine Leaves",
+
   "tooltip.fractureddepths.metal_detector.tooltip": "Finds valuables",
   "tooltip.fractureddepths.metal_detector.sound_block": "Makes sounds when right clicked",
 

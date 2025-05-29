@@ -1,6 +1,7 @@
 package net.feral.fractureddepths.datagen;
 
 import net.feral.fractureddepths.FracturedDepths;
+import net.feral.fractureddepths.block.ModBlocks;
 import net.feral.fractureddepths.item.ModItems;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
@@ -31,5 +32,13 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModItems.BEWITCHED_MUSIC_DISC.get())
                 .add(ModItems.NO_ESCAPE_MUSIC_DISC.get());
 
+        this.tag(ItemTags.LOGS_THAT_BURN)
+                .add(ModBlocks.PINE_LOG.get().asItem())
+                .add(ModBlocks.PINE_WOOD.get().asItem())
+                .add(ModBlocks.STRIPPED_PINE_LOG.get().asItem())
+                .add(ModBlocks.STRIPPED_PINE_WOOD.get().asItem());
+
+        this.tag(ItemTags.PLANKS)
+                .add(ModBlocks.PINE_PLANKS.get().asItem());
     }
 }
